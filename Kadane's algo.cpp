@@ -22,3 +22,17 @@ int main()
     cout<<max;
     return 0;
 }
+
+//**************************************
+
+ int maxSubArray(vector<int>& a) {
+         int sum=0,ans=INT_MIN;
+        for(int i=0;i<a.size();i++)
+        {
+            sum+=a[i];
+            ans= max(sum, ans);
+              if(sum<0)
+                sum=0;
+        }             
+        return ans;
+    }
