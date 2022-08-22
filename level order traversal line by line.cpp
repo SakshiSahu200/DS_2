@@ -12,7 +12,7 @@ struct node
         right=nullptr;
     }
 };
-void levelOrder(node *root) // TC- O(n+w)=O(n)   SC= O(width) as we can ignore null...null is not counted in asymptotic notations
+void levelOrder(node *root) // TC- O(n+h)=O(n)   SC= O(width) as we can ignore null since it is only one...and 1 is constant in asymptotic notations
 {
 
     if(root==nullptr) return;
