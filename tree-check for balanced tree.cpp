@@ -7,6 +7,7 @@ bool IsBalanced(node root)
     int b= height(root->right);
     return abs(a-b)<=1 && IsBalanced(root->left) && IsBalanced(root->right);
 }
+/***********************************************************************/
 
 //efficient O(n) time
 int IsBalanced(node root)
